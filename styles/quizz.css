@@ -1,0 +1,125 @@
+img {
+    width: 300px;
+    height: 150px;
+}
+#round1 {
+ margin: 0 auto;
+    width: max-content;
+    padding: 30px 200px 30px 200px;
+    border-radius: 30px;
+    box-shadow: dimgrey;
+    font-size: larger;
+    background-color: #a6c5ee;
+
+}
+label {
+    font-family: Arial, sans-serif;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: green;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+#fo,
+#fo2,
+#fo3,
+#confirm {
+    display: none;
+}
+#confirm {
+    position: absolute;
+    margin-left: 25%;
+    height: 50px;
+    width: 150px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #4caf50;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+#confirm:hover {
+    background-color: rgb(98, 230, 36);
+    cursor: pointer;
+}
+#fo {
+    width: 280px;
+}
+#title {
+    animation-name: titre;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes titre {
+    from {
+        margin-left: 0%;
+    }
+    50% {
+        margin-left: 50%;
+    }
+    to {
+        margin-left: 60%;
+    }
+}
+#c {
+    width: 16px;
+    height: 16px;
+}
+span {
+    color: green;
+}
