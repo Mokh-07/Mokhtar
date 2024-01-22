@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mokhtar Bouchekoua</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="../styles/quizz.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="menu">
+<ul>
+
+	<li ><a  href="../index.html" >Home</a></li>
+	<li><a   href="education.html">Education</a></li>
+	<li><a href="skills.html">Skills</a></li>
+	<li><a href="Experience.html">Experience</a></li>
+	<li><a href="events.html">Evenements</a></li>
+	<li><a href="Projects.html">Projets</a></li>
+	<li><a href="passions.html">Passions</a></li>
+	<li><a class="active" href="quizz.html">Quizz</a></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+	<div class="container">
+		<div class="hero">
+			<h1 class="name">Quizz</h1>
+			</div>
+	</div>
+
+<div id="round1">
+	<form name="fo1" id="fo1">
+		<label><strong> Capitale de Palestine: </strong></label><br><br>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/1024px-Flag_of_Palestine.svg.png" alt="palestine flag" /><br><br>
+		<input type="checkbox" value="Gaza" name="c1" id="c" />Gaza <br><br>
+		<i id="check1"></i><input type="checkbox" value="AlQuods" name="c2" id="c" />AlQuods <br><br>
+		<input type="checkbox" value="Ramallah" name="c3" id="c" />Ramallah <br><br><br>
+		confirmer
+		<label class="switch">
+			<input type="checkbox" value="confirm" onclick="f1() " id="c">
+			<span class="slider round"></span>
+		</label>
+
+	</form>
+	<form name="fo2" id="fo2">
+		<label><strong>Capitale de Tunisia:</strong></label><br><br>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/800px-Flag_of_Tunisia.svg.png" alt="tunisia flag" /><br><br>
+		<input type="checkbox" name="c4" id="c" />Sfax <br><br>
+		<input type="checkbox" name="c5" id="c" />Sousse <br><br>
+		<i id="check2"></i><input type="checkbox" name="c6" id="c" />Tunis <br><br><br>
+		confirmer
+		<label class="switch">
+			<input type="checkbox" value="confirm" onclick="f2() " id="c">
+			<span class="slider round"></span>
+		</label>
+
+	</form>
+	<form name="fo3" id="fo3">
+		<label><strong>Capitale de Canada:</strong></label><br><br>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1024px-Flag_of_Canada_%28Pantone%29.svg.png" alt="canada flag" /><br><br>
+		<input type="checkbox" name="c7" id="c" />Ottawa <br><br>
+		<input type="checkbox" name="c8" id="c" />Montéral <br><br>
+		<i id="check2"></i><input type="checkbox" name="c9" id="c" />Toronto <br><br><br>
+		confirmer vos réponses
+		<label class="switch">
+			<input type="checkbox" value="confirm" onclick="f3() " id="c">
+			<span class="slider round"></span>
+		</label>
+		<input type="button" value="Résultats" id="confirm" onclick="f() " />
+
+	</form>
+	<div id="fo">
+		<div id="res"></div><br>
+		<strong> les réponses:</strong><br><br>
+		Capitale de Palestine:<br>
+		<span>✓</span> AlQuods<br><br>
+		Capitale de Tunisia:<br>
+		<span>✓</span> Tunis<br><br>
+		Capitale de Canada:<br>
+		<span>✓</span> Ottawa<br>
+		</form>
+	</div>
+
+		<script src="../javascript/quizz.js"> </script>
+</body>
+</html>
